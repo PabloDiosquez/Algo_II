@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Hola Mundo!")
@@ -21,4 +23,25 @@ func main() {
 	fmt.Println("y: ", y)
 	fmt.Println("z: ", z)
 
+	//fmt.Println("Suma:", sumar(3, 1))
+
+	suma, resta := sumarYRestar(3, 4)
+
+	fmt.Println("Suma:", suma)
+	fmt.Println("Resta:", resta)
+
+}
+
+func sumar(a int, b int) int {
+	return a + b
+}
+
+// func sumarYRestar(a, b int) (int, int) {
+// 	return a+b, a-b
+// }
+
+func sumarYRestar(a, b int) (suma, resta int) {
+	suma = a + b
+	resta = a - b
+	return
 }
