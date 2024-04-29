@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -36,6 +37,35 @@ func main() {
 
 	for i := 0; i < 10; i++ {
 		fmt.Println(i)
+	}
+
+	// While - Ejemplo
+	// for condición {
+	// 		Bloque
+	// }
+
+	// Switch
+	fmt.Println("Qué día es hoy?")
+	today := time.Now().Weekday()
+
+	switch today {
+	case time.Monday:
+		fmt.Println("Lunes :(")
+	case time.Saturday, time.Sunday:
+		fmt.Println("Finde :)")
+	default:
+		fmt.Println("No sé (?)")
+
+	}
+
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Buen día.")
+	case t.Hour() < 17:
+		fmt.Println("Buenas tardes.")
+	default:
+		fmt.Println("Buenas noches.")
 	}
 
 }
