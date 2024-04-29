@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
+	algo := "Algoritmos"
 	fmt.Println("Hola Mundo!")
+	fmt.Printf("Esto es %s %d\n", algo, 2)
 
 	a, b := 5, 9
 	fmt.Println("a:", a)
@@ -30,6 +32,12 @@ func main() {
 	fmt.Println("Suma:", suma)
 	fmt.Println("Resta:", resta)
 
+	// For - Ejemplo
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
 }
 
 func sumar(a int, b int) int {
@@ -38,6 +46,13 @@ func sumar(a int, b int) int {
 
 // func sumarYRestar(a, b int) (int, int) {
 // 	return a+b, a-b
+// }
+
+// func sumarYRestar(a, b int) (int, int) {
+// 	var suma, resta int
+// 	suma = a+b
+// 	resta = a-b
+// 	return suma, resta
 // }
 
 func sumarYRestar(a, b int) (suma, resta int) {
