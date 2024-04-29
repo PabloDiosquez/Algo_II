@@ -68,6 +68,11 @@ func main() {
 		fmt.Println("Buenas noches.")
 	}
 
+	// Defer
+	//saludar()
+
+	multiplicar(3, 5)
+
 }
 
 func sumar(a int, b int) int {
@@ -89,4 +94,18 @@ func sumarYRestar(a, b int) (suma, resta int) {
 	suma = a + b
 	resta = a - b
 	return
+}
+
+func saludar() {
+	defer fmt.Printf("Mundo!")
+	fmt.Printf("Hola ")
+}
+
+// El defer funciona como una pila.
+func multiplicar(a, b int) int {
+	defer fmt.Println("Los números dados:", a, "y", b)
+	defer fmt.Println("Estoy multiplicando")
+	resultado := a * b
+	fmt.Println("El resultado de la multiplicación es:", resultado)
+	return resultado
 }
