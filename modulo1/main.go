@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"time"
+	mate "modulo1/matematica"
 )
 
 func main() {
@@ -72,6 +73,10 @@ func main() {
 	//saludar()
 
 	multiplicar(3, 5)
+
+	// Importar paquetes
+	base, altura := 4, 5
+	fmt.Println("Área rectángulo:", mate.AreaRectangulo(base, altura))
 
 }
 
