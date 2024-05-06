@@ -62,3 +62,7 @@ func pasaUnDia(valor *int) {
 func modificar(arreglo *[4]int) {
 	arreglo[0] = 0
 }
+
+func modificar_slice(slice []int) {
+	slice[0] = -1
+}
