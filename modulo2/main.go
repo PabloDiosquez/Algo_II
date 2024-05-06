@@ -16,11 +16,23 @@ func main() {
 	arreglo[2] = 10
 	fmt.Println(arreglo)
 
-	numeros := [4]int{1, 2, 3}
-	fmt.Println(numeros)
+	// numeros := [4]int{1, 2, 3}
+	// fmt.Println(numeros)
 
 	modificar(&arreglo)
 	fmt.Println(arreglo)
+
+	// Slices
+	//numeros := [6]int{1,2,3,4,5}
+	// var slice []int = numeros[1:3]
+	// fmt.Println(slice)
+
+	// Crea un array [5]int y hace un slice := array[:]
+	// slice := []int{1,2,3,4,5}
+	// fmt.Println(slice)
+
+	slice := make([]int, 0)
+	fmt.Println(slice)
 
 }
 
